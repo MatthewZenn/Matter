@@ -1,0 +1,22 @@
+{
+  "name": "matter",
+  "version": "1.0.0",
+  "description": "Desktop Application that extends functionality of FamilySearch",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthewZenn/Matter.git"
+  },
+  "author": "Matthew Zenn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MatthewZenn/Matter/issues"
+  },
+  "homepage": "https://github.com/MatthewZenn/Matter#readme",
+  "dependencies": {
+    "electron": "^13.1.7"
+  }
+}
