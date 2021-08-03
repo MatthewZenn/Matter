@@ -6,12 +6,14 @@
         <title>Matter</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/d15157182d.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
         <div id="border">
             <nav style="-webkit-app-region: drag">
-                <img src="Static/Logo.svg" class="logo">
+                <img src="Static/Logo.svg" class="logo" id="logo" style="-webkit-app-region: no-drag">
+                <p class="title">Matter</p>
                 <div id="controls" style="-webkit-app-region: no-drag">
                     <div id="minimize">
                         <span>&minus;</span>
@@ -25,12 +27,17 @@
                 </div>
             </nav>
         </div>
-        <input type="text" id="search" style="-webkit-app-region: no-drag" placeholder="Search">
-        <div class="panel">
+        <div class="search-bar">
+        <input type="text" id="search" style="-webkit-app-region: no-drag" placeholder="Search" onkeypress="press(event)">
+        <button id="google" style="-webkit-app-region: no-drag"><i class="fab fa-google"></i></button>
+        <button id="family" style="-webkit-app-region: no-drag"><i class="fab fa-pagelines"></i></button>
+        </div>
+        <div class="panel" id="panel" style="left: -20%;">
             <ul>
-                <li>Home</li>
-                <li>Tree</li>
-                <li>About</li>
+                <li id="home"><i class="fas fa-home"></i> Home</li>
+                <li id="tree"><i class="fab fa-pagelines"></i> Tree</li>
+                <li id="image"><i class="far fa-image"></i> ImgSearch</li>
+                <li id="about"><i class="fab fa-github"></i> About</li>
             </ul>
         </div>
         <script src="logic.js" async defer></script>

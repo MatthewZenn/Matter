@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/MatthewZenn/Matter#readme",
   "dependencies": {
+    "@electron/remote": "^1.2.1",
     "electron": "^13.1.7"
   }
 }

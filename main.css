@@ -63,13 +63,23 @@ body, html {
     z-index: 1;
 }
 
+.title {
+    position: absolute;
+    left: 50px;
+    transform: translateY(-100%);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    z-index: 999;
+}
+
 .panel {
     position: relative;
     width: 20%;
     top: 0;
-    left: 0;
     height: 100%;
     background-color: rgb(24, 28, 31);
+    transition-duration: 0.3s;
 }
 
 ul {
@@ -78,7 +88,7 @@ ul {
 }
 
 li {
-    color: white;
+    color: rgb(53, 61, 66);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     padding-bottom: 25px;
@@ -89,9 +99,10 @@ li {
 }
 
 li:hover {
-    border-left: 5px solid #DD0058;
     background-color: rgb(33, 38, 41);
+    color: white;
     transition-duration: 0.25s;
+    cursor: pointer;
 }
 
 #search {
@@ -108,4 +119,64 @@ li:hover {
     color: white;
     padding-left: 20px;
     outline: none;
+}
+
+#google {
+    position: absolute;
+    left: 72%;
+    transform: translateX(-50%);
+    height: 50px;
+    width: 50px;
+    top: 10px;
+    background-color: rgb(53, 61, 66);
+    border: none;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    color: rgb(33, 38, 41);
+    outline: none;
+}
+
+#family {
+    position: absolute;
+    left: 67.5%;
+    transform: translateX(-50%);
+    height: 50px;
+    width: 50px;
+    top: 10px;
+    background-color: rgb(53, 61, 66);
+    border: none;
+    border-radius: 50px;
+    font-size: 1.8rem;
+    color: rgb(33, 38, 41);
+    outline: none;
+}
+
+#google:hover {
+    background-color: white;
+    color: #4285F4;
+    transition-duration: 0.25s;
+    cursor: pointer;
+}
+
+#family:hover {
+    background-color: white;
+    color: #36aa00;
+    transition-duration: 0.25s;
+    cursor: pointer;
+}
+
+#home:hover {
+    border-left: 5px solid #DD0058;
+}
+
+#tree:hover {
+    border-left: 5px solid #36aa00;
+}
+
+#image:hover {
+    border-left: 5px solid #ddb500;
+}
+
+#about:hover {
+    border-left: 5px solid #4285F4;
 }
