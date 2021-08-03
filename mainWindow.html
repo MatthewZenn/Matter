@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Custom TitleBar</title>
+        <title>Matter</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
@@ -12,7 +12,6 @@
         <div id="border">
             <nav style="-webkit-app-region: drag">
                 <img src="Static/Logo.svg" class="logo">
-                <p class="title">Matter</p>
                 <div id="controls" style="-webkit-app-region: no-drag">
                     <div id="minimize">
                         <span>&minus;</span>
@@ -25,6 +24,14 @@
                     </div>
                 </div>
             </nav>
+        </div>
+        <input type="text" id="search" style="-webkit-app-region: no-drag" placeholder="Search">
+        <div class="panel">
+            <ul>
+                <li>Home</li>
+                <li>Tree</li>
+                <li>About</li>
+            </ul>
         </div>
         <script src="logic.js" async defer></script>
     </body>

@@ -9,7 +9,7 @@ Menu.setApplicationMenu(null);
 let mainWindow;
 
 app.on('ready', function(){
-    mainWindow = new BrowserWindow({width: 1200, height: 720, resizable: true, frame: false, webPreferences: {
+    mainWindow = new BrowserWindow({width: 1280, height: 720, resizable: true, frame: false, webPreferences: {
         nodeIntegration: true,
         contextIsolation: false,
         enableRemoteModule: true
@@ -24,4 +24,8 @@ app.on('ready', function(){
 ipcMain.on('minimize', () => {
     mainWindow.minimize();
     //win.hide();
+  });
+
+  ipcMain.on('maximize', () => {
+    mainWindow.maximize();
   })

@@ -10,8 +10,7 @@ function Maximize() {
         window.resizeTo(1280, 720);
     }
     else {
-        window.moveTo(0, 0);
-        window.resizeTo(screen.width, screen.height);
+        ipcRenderer.send('maximize')
     }
 }
 
