@@ -6,6 +6,7 @@ var google = document.getElementById("google");
 var about = document.getElementById("about");
 var panel = document.getElementById("panel");
 var logo = document.getElementById("logo");
+var title = document.getElementById("title");
 
 maximize.addEventListener("click", Maximize);
 minimize.addEventListener("click", Minimize);
@@ -22,10 +23,6 @@ function Maximize() {
 function Minimize() {
     ipcRenderer.send('minimize');
 }
-
-google.addEventListener('click', submitForm);
-about.addEventListener('click', help);
-logo.addEventListener("click", Move);
 
 function submitForm() {
     shell.openExternal('https://www.google.com/search?q='+document.getElementById('search').value);
