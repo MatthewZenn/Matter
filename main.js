@@ -20,7 +20,6 @@ app.on('ready', function(){
         protocol: 'file:',
         slashes: true
     }));
-    mainWindow.webContents.openDevTools()
 });
 
 ipcMain.on('minimize', () => {
